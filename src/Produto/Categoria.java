@@ -2,8 +2,10 @@ package Produto;
 
 import java.util.ArrayList;
 
+import Produtos.Produto;
+
 public class Categoria {
-    private Produto codigo;
+    
     private String tipo;
 
     public void ListarCategoria(ArrayList<Produto> categoria){
@@ -23,15 +25,11 @@ public class Categoria {
             }
         }
     }
-    public Produto getCodigo() {
-        return codigo;
-    }
+   
     public String getTipo() {
         return tipo;
     }
-    public void setCodigo(Produto codigo) {
-        this.codigo = codigo;
-    }
+    
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }

@@ -3,8 +3,9 @@ package User;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Produto.Carrinho;
-import Produto.Produto;
+import Carrinho.Carrinho;
+import Produtos.Coduser;
+import Produtos.Produto;
 
 public abstract class Usuario {
     
@@ -39,8 +40,8 @@ public abstract class Usuario {
         this.ip=0;
         this.logado=false;
         this.produtos= new Produto();
-        this.sacola = new Carrinho();
-        
+        this.sacola = new Carrinho(); 
+          
     }
     
     
@@ -122,6 +123,8 @@ public abstract class Usuario {
    public void setProduto(Produto produto) {
        this.produtos = produto;
    }
+
+   
 
    public boolean logar(){
         if(this.email == null && this.senha == null){

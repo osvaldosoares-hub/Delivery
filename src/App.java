@@ -1,8 +1,9 @@
 
 
 import Adm.Cliente;
-import Produto.Compras;
-import Produto.Produto;
+import Compras.Compras;
+import Produtos.Coduser;
+import Produtos.Produto;
 
 
 public class App {
@@ -12,6 +13,7 @@ public class App {
         cleinte1.setNome("osvaldo");
         cleinte1.setEmail("valdim.osvaldo@gmail.com");
         cleinte1.setSenha("213");
+        cleinte1.setCodigo(123);
         cleinte1.logar();
 
 
@@ -36,7 +38,7 @@ public class App {
         
         //armazem.Categoria(estoque);
         
-        cleinte1.AddProdutoCarrinho(armazem,produto1);
+       cleinte1.AddProdutoCarrinho(armazem,produto1);
         
        
         //cleinte1.Carrinho();
@@ -44,30 +46,35 @@ public class App {
 
         //cleinte1.BuscarPorCategoria(estoque,427);
        
-        armazem.Listar();
+       // armazem.Listar();
         
         
-        armazem.Categoria();
+        //armazem.Categoria();
 
         
 
         System.out.println();
-        System.out.println();
-        
-        cleinte1.Carrinho(armazem);
-        
-        System.out.println();
-        armazem.Categoria();
         System.out.println();
         
         //cleinte1.Carrinho(armazem);
+        
+        System.out.println();
+        //armazem.Categoria();
+        System.out.println();
+        
+        cleinte1.Carrinho(armazem);
         //cleinte1.Carrinho();
 
         System.out.println("compras");
         
-        cleinte1.Carrinho();
+        //cleinte1.Carrinho();
         
-        cleinte1.ListarCompras();
+        //cleinte1.ListarCompras();
+        System.out.println();
+        
+        Coduser cod =  new Coduser();
+        cod.setUsercod(cleinte1.getCodigo());
+        System.out.println(cod.getUsercod());
 
         
     }

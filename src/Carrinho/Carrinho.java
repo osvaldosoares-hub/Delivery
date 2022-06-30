@@ -1,7 +1,10 @@
-package Produto;
+package Carrinho;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import Compras.Compras;
+import Produtos.Produto;
 
 public class Carrinho {
    
@@ -16,7 +19,6 @@ public class Carrinho {
 
     
     public Carrinho(){
-        this.c= new Compras();
         this.carrinho = new ArrayList<Produto>();
     }
     public ArrayList<Produto> getCarrinho() {
@@ -86,7 +88,7 @@ public class Carrinho {
            saldo = p.getPreço() + saldo;    
         }
         setSubtotal(saldo);
-        
+        this.c= new Compras();
         c.ListarCompras(sacola);
 
         sacola.carrinho.removeAll(sacola.getCarrinho());

@@ -2,20 +2,28 @@ package Adm;
 
 
 
-import Produto.Compras;
-
+import Produtos.Coduser;
 import User.Usuario;
 
 public class Cliente extends Usuario{
-    private Compras comprarealizada;
-    
+    private Coduser cod= new Coduser();  
     public Cliente(){
-       this.comprarealizada = new Compras();
+      
+    }
+    public Coduser getCod() {
+        return cod;
     }
     public int ListarCompras(){
-        comprarealizada.Listar();
+        System.out.println(getCodigo());
+        
         return 1;
     }
+
+
+    public int pegarCodUser(){
+        
+        return 1;
+   }
    
    
 }

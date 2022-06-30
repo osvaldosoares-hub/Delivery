@@ -1,6 +1,8 @@
-package Produto;
+package Produtos;
 
 import java.util.ArrayList;
+
+import Produto.Categoria;
 
 public  class Produto {
     private int codProduto;
